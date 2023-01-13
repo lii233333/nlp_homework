@@ -8,7 +8,7 @@ device = torch.device("cuda:1")
 if __name__ == "__main__":
     # 加载模型
     bertmodel = model.BertClassfication()
-    param = torch.load("./model_param/model.pth",map_location=device)
+    param = torch.load("./model.pth",map_location=device)
     bertmodel.load_state_dict(param)
     bertmodel.to(device)
 

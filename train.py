@@ -34,7 +34,7 @@ for epoch in range(Epoch):
             print("Epoch:%d,Batch:%d,Loss %.4f" % ((epoch),(i),los/5))
             los = 5
 
-torch.save(bertclassfication.state_dict(),"./model_param/model.pth")
+torch.save(bertclassfication.state_dict(),"./model.pth")
 
 print("----------------------测试准确率-----------------------")
 hit = 0 #用来计数，看看预测对了多少个
